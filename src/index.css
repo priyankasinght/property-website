@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary bg-gray-200;
+  }
+  .dropdown {
+    @apply w-full lg:max-w-[296px] cursor-pointer;
+  }
+  .dropdown-btn {
+    @apply flex h-[64px] items-center px-[18px] border rounded-lg;
+  }
+  .dropdown-icon-primary {
+    @apply text-2xl mr-[18px] text-green-700;
+  }
+  .dropdown-icon-secondary {
+    @apply text-2xl text-green-700 ml-auto;
+  }
+  .dropdown-menu {
+    @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  background-color: rgb(139, 240, 184);
+}
+.left{
+  color: rgb(5, 46, 23);
+  font-weight: bold;
+  font-size: large;
+}
+.left span {
+  margin-right: 30px;
+}
+.right button {
+  margin-right: 20px;
+}
+.login {
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.signup {
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  cursor: pointer;
+}
+.home {
+  margin-top: 80px;
+  background-color: rgb(198, 243, 233);
+}
